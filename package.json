@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "mocha -w ./tests/**/*.spec.js"
+    "dev": "node index.js",
+    "test": "mocha -w ./tests/**/*.spec.js",
+    "build": "webpack"
   },
   "author": "Henry",
   "license": "ISC",
@@ -32,6 +34,8 @@
     "mocha": "^8.2.1",
     "nodemon": "^2.0.6",
     "supertest": "^6.0.1",
-    "supertest-session": "^4.1.0"
+    "supertest-session": "^4.1.0",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
   }
 }

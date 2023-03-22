@@ -25,6 +25,10 @@ server.use((req, res, next) => {
   next();
 });
 
+server.get('/', async (req, res) => {
+  res.send('asdasdas');
+});
+
 server.use('/', routes);
 
 // Error catching endware.
